@@ -1,7 +1,6 @@
 # appMayorista — backend
 
 > **Este repositorio es un espejo público del backend en producción**, publicado para mostrar la arquitectura y el código.
-> No tiene el historial de commits original. Tampoco incluye credenciales, datos de la base ni datos personales: el dump de `database/baseline.sql` es solo el esquema y las migraciones con seeds de datos reales se reemplazaron por su estructura.
 > El desarrollo sigue en un repositorio privado.
 
 Backend de la plataforma de gestión de **Italo Argentina**, una cooperativa agropecuaria. Un solo servicio da soporte a tres clientes:

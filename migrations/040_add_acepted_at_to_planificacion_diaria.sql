@@ -1,0 +1,5 @@
+BEGIN;
+
+ALTER TABLE planificacion_diaria ADD COLUMN IF NOT EXISTS acepted_at TIMESTAMPTZ;
+
+COMMIT;

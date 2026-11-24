@@ -1,0 +1,11 @@
+node_modules
+npm-debug.log
+dist
+.git
+.github
+.env
+*.pdf
+*.zip
+.claude/
+claude_tasks/
+*.md

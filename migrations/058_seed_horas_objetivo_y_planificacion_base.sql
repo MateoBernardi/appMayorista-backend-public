@@ -1,0 +1,11 @@
+-- Seed de objetivos de horas semanales y turno base por empleado.
+-- En el repo de producción esta migración carga datos reales de la planilla de RR.HH.;
+-- en este espejo público se omiten los datos personales.
+--
+-- Forma de los datos (horas_objetivo en deciHoras = horas × 10):
+--   INSERT INTO usuarios_horas_objetivo (user_context_id, horas_objetivo) VALUES (<id>, 480), ...
+--     ON CONFLICT (user_context_id) DO UPDATE SET horas_objetivo = EXCLUDED.horas_objetivo, updated_at = now();
+--   INSERT INTO planificacion_base_semanal (user_context_id, turno, hora_in, hora_out, sede_id_in, sede_id_out)
+--     VALUES (<id>, 'Mañana', '07:30', '12:00', 2, 2), ...
+--     ON CONFLICT (user_context_id, turno) DO UPDATE SET ...;
+SELECT 1;

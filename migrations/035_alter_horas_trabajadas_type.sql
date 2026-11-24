@@ -1,0 +1,1 @@
+ALTER TABLE planificacion_diaria ALTER COLUMN horas_trabajadas TYPE NUMERIC(3, 1);
